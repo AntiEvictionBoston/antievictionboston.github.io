@@ -1,10 +1,7 @@
 # Site settings
 title: Boston Anti-Eviction Mapping Project
 email: antievictionboston@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: A volunteer effort to stop evictions and pass a Just Cause Eviction Ordinance in the Boston Area using interactive maps and powerful stories.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://antievictionboston.github.io" # the base hostname & protocol for your site
 twitter_username:
@@ -12,3 +9,17 @@ github_username:
 
 # Build settings
 markdown: kramdown
+
+# Defaults
+defaults:
+  - scope:
+      type: maps
+    values:
+      layout: map
+
+# Maps configuration
+collections:
+  maps:
+    output: true
+    permalink: /maps/:path/
+
