@@ -242,6 +242,12 @@
  
 .action {
   
+  &.featured {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  
   @include media-query-min($on-laptop) {
     float: left;
     vertical-align: top;
@@ -249,6 +255,7 @@
     width:         calc(33% - (#{$spacing-unit} / 2));
     padding-right: $spacing-unit / 2;
   }
+
 }
 
 /**
