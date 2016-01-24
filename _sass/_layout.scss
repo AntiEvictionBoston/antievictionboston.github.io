@@ -234,3 +234,26 @@
         }
     }
 }
+
+
+/**
+ * Actions
+ */
+ 
+.action {
+  
+  @include media-query-min($on-laptop) {
+    float: left;
+    vertical-align: top;
+    width: -webkit-calc(33% - (#{$spacing-unit} / 2));
+    width:         calc(33% - (#{$spacing-unit} / 2));
+    padding-right: $spacing-unit / 2;
+  }
+}
+
+/**
+ * Maps
+ */
+.layout-map .page-content {
+  padding: 0;
+}

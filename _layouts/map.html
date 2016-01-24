@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  
+  <body class="layout-map">
+
+  <style>
+    .leaflet-container {
+      height: 98vh;
+      width: device-width;
+    }
+  </style>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div id="{{ page.map_id }}"></div>
+
+      <!-- for production -->
+      <!-- <script src="https://cdn.rawgit.com/AntiEvictionBoston/utility/ee9f2e2bed3956face2462bbeb86bb1b419e97b0/east_boston.js"></script> -->
+      <!-- for testing (updates more quickly, but will be throttled on the real site) -->
+      <script src="https://rawgit.com/AntiEvictionBoston/utility/master/maps.js"></script>
+            
+    </div>
+
+  </body>
+
+</html>
