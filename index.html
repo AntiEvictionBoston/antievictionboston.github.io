@@ -4,16 +4,17 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Maps</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for map in site.maps %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="map-link" href="{{ map.url | prepend: site.baseurl }}">{{ map.title }}</a>
         </h2>
+        <p class="map-description">
+          {{ map.description }}
+        </p>
       </li>
     {% endfor %}
   </ul>
