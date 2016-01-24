@@ -18,6 +18,20 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% comment %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% endcomment %}
+  
+  <div class="action">
+    {% include actions/advocate.html %}
+  </div>
+  
+  <div class="action">
+    {% include actions/join.html %}
+  </div>
+
+  <div class="action">
+    {% include actions/signup.html %}
+  </div>
 
 </div>
