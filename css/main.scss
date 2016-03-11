@@ -3,7 +3,16 @@
 ---
 @charset "utf-8";
 
+/* path to glyphicons */
+$icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+/* custom variable */
+$body-bg: red;
+
+/* any style customization must be before the bootstrap import */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -55,3 +64,5 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+*/
