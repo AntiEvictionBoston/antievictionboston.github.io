@@ -85,6 +85,7 @@ h2 {
 
 
 /* Jumbotron */
+
 .home-jumbotron {
   color: #fff;
   h1 {
@@ -92,6 +93,27 @@ h2 {
     color: $accent-color;
   }
   
+}
+
+/* Navigation */
+
+.navbar {
+  background-color: #000000; 
+  border: 0;
+  -webkit-border-radius: 0; // reset bootstrap
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.navbar-fixed-top {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-default .navbar-text {
+  color: #ffffff;
+  a {
+    color: #ffffff;
+  }
 }
 
 
