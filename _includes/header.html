@@ -1,10 +1,12 @@
 <header class="site-header">
 
-  <div class="wrapper">
+ <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #000000; opacity: .75; border: 0;">
+  <div class="container">
+  
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+     <p class="navbar-text" style="color: #ffffff;" href="{{ site.baseurl }}/">{{ site.title }}</p>
 
-    <nav class="site-nav">
+   
     <!--
       <a href="#" class="menu-icon">
       
@@ -18,7 +20,7 @@
       <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <p class="navbar-text navbar-right" style="color: #ffffff;"><a href="{{ page.url | prepend: site.baseurl }}" target="_blank" style="color: #ffffff;">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
