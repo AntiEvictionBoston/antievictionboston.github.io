@@ -27,7 +27,9 @@ collections:
 sass:
   # loading path from site root
   # default to _sass
-  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+  load_paths: 
+  - bower_components/bootstrap-sass/assets/stylesheets
+  - _sass
 
   # style : nested (default), compact, compressed, expanded
   #         :nested, :compact, :compressed, :expanded also works
