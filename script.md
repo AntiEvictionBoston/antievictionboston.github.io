@@ -9,9 +9,10 @@ Let your City Councilor know we need stronger protections from "evictions for pr
 
 ### For councillors who SUPPORT Just Cause Eviction: Tito Jackson, Ayanna Pressley, Matt O'Malley
 
-Email subject line: Just Cause Eviction support
 
-Dear Cllr [your councilor's name],
+*Email subject line:* Just Cause Eviction support
+
+Dear Cllr *[your councilor's name]*,
 
 As a local resident I am writing to thank you for your support with Just Cause Eviction (JCE). I ask you to continue to commit to JCE by encouraging your colleagues who are less committed to support this cause. As you know, this is a cause that needs urgent support from our city leaders.
 
@@ -25,13 +26,13 @@ Thank you! I look forward to hearing from you.
 
 Yours sincerely,
 
-[your name]
+*[your name]*
 
-For councillors who MIGHT SUPPORT Just Cause Eviction: Josh Zakim, Andrea Campbell, Michael Flaherty, Annissa Essaibi George, Frank Baker, Salvatore LaMattina, Michelle Wu, Timothy McCarthy
+### For councillors who MIGHT SUPPORT Just Cause Eviction: Josh Zakim, Andrea Campbell, Michael Flaherty, Annissa Essaibi George, Frank Baker, Salvatore LaMattina, Michelle Wu, Timothy McCarthy
 
-Email subject line: Just Cause Eviction support
+*Email subject line: Just Cause Eviction support*
 
-Dear Cllr [your councilor's name],
+Dear Cllr *[your councilor's name]*,
 
 As a local resident I am writing to ask you to commit your support the Just Cause Eviction now and when it comes before the Boston City Council.
 
@@ -45,8 +46,8 @@ Thank you! I look forward to hearing from you.
 
 Yours sincerely,
 
-[your name]
+*[your name]*
 
-[your address]
+*[your address]*
 
-[your address]
+*[your address]*
