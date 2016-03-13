@@ -36,6 +36,11 @@ $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   color: #ffffff;
 }
 
+.aemp-actions {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* any style customization must be before the bootstrap import */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
