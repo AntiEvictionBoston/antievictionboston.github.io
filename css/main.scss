@@ -61,6 +61,14 @@ $content-width:    800px;
   padding-bottom: 30px;
 }
 
+/* Page */
+ .page {
+    padding-top: $spacing-unit*3;
+    padding-bottom: $spacing-unit*2;
+ }
+
+
 /* any style customization must be before the bootstrap import */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
 

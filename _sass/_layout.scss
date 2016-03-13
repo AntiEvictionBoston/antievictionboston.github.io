@@ -161,6 +161,11 @@
 /**
  * Page content
  */
+
+ .page {
+    padding-top: $spacing-unit*3;
+ }
+
 .page-content {
     padding: $spacing-unit 0;
 }
