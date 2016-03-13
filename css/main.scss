@@ -3,12 +3,17 @@
 ---
 @charset "utf-8";
 
-/* path to glyphicons */
+/* Bootstrap */
+
+// path to glyphicons @TODO not sure if this is used
 $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/"; 
 
-/* custom variable */
+// import bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-// Our variables
+
+/* Our variables */
+
 $base-font-family: "Lato", "Helvetica", Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -28,9 +33,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    800px;
 
 
-@media screen and (min-width: 600px) {
-  .jumbotron-hero-height { height: 550px;
-  } 
+/* Basic styles */
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .btn-btn-aemp {
@@ -62,13 +69,14 @@ $content-width:    800px;
 }
 
 /* Page */
- .page {
-    padding-top: $spacing-unit*3;
-    padding-bottom: $spacing-unit*2;
- }
+.page {
+  padding-top: $spacing-unit*3;
+  padding-bottom: $spacing-unit*2;
+}
 
-
-/* any style customization must be before the bootstrap import */
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
-
+@media screen and (min-width: $screen-xs) {
+  .home-jumbotron { 
+    height: 550px; // for browsers that don't understand vh
+    min-height: 60vh;
+  } 
+}
