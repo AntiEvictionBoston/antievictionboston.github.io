@@ -131,6 +131,29 @@ h2 {
   } 
 }
 
+/* Map list */
+
+.map-list {
+  padding-top: $spacing-unit;
+  li {
+    list-style-type: none;
+  }
+  .panel {
+    border: 1px solid #ccc;
+  }
+  .map-thumbnail a {
+    display: block;
+    padding-top: 33%;
+    background-position: center center;
+    background-size: 100%;
+    border-radius: $spacing-unit/6;
+    transition: all ease 300ms;
+  }
+  li:hover .map-thumbnail a {
+    background-size: 110%;
+  }
+}
+
 /* Map */
 
 .layout-map {

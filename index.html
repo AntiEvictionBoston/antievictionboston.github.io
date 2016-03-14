@@ -19,20 +19,25 @@ layout: default
   </div>
 <!--end page description-->
 
-  <h1 class="page-heading">Maps</h1>
-
-  <ul class="post-list">
-    {% for map in site.maps %}
-      <li>
-        <h2>
-          <a class="map-link" href="{{ map.url | prepend: site.baseurl }}">{{ map.title }}</a>
-        </h2>
-        <p class="map-description">
-          {{ map.description }}
-        </p>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="container-fluid">
+    <ul class="map-list container">
+      {% for map in site.maps %}
+        <li class="map-list-item panel">
+        <div class="panel-body">
+          <div class="map-thumbnail">
+            <a href="{{ map.url | prepend: site.baseurl }}" title="View map" style="background-image: url({{ map.thumbnail | prepend: site.baseurl }});"></a>
+          </div>
+          <h2>
+            <a class="map-link" href="{{ map.url | prepend: site.baseurl }}" title="View map">{{ map.title }}</a>
+          </h2>
+          <p class="map-description">
+            {{ map.description }}
+          </p>
+        </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 
   {% comment %}
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
