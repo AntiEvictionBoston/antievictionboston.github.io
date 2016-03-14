@@ -1,11 +1,12 @@
 # Site settings
 title: Boston Displacement Mapping Project
 email: antievictionboston@gmail.com
-description: A volunteer effort to stop evictions and pass a Just Cause Eviction Ordinance in the Boston Area using interactive maps and powerful stories.
+description: Stories and data to stop evictions for profit in Boston.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://antievictionboston.github.io" # the base hostname & protocol for your site
 twitter_username:
 github_username:
+social_image: /images/Maverick060.jpg
 
 # Build settings
 markdown: kramdown
