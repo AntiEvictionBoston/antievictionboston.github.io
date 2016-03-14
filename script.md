@@ -5,7 +5,7 @@ permalink: /email-script/
 ---
 <br />
 
-Let your City Councilor know we need stronger protections from "evictions for profit" in Boston. Below is a message you can email to your City Councilor to express your support for stronger protections. Copy and paste it to compose an email from your email account. Or, compose an email in your own words.
+Let your City Councillor know we need stronger protections from "evictions for profit" in Boston. Below is a message you can email to your City Councillor to express your support for stronger protections. Copy and paste it to compose an email from your email account. Or, compose an email in your own words.
 
 ### For councillors who SUPPORT Just Cause Eviction: 
 **Tito Jackson, Ayanna Pressley, Matt O'Malley**
