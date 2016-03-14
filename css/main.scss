@@ -110,12 +110,21 @@ h2 {
   a {
     color: #ffffff;
   }
-  
+
   .navbar-brand {
     font-size: 1em;
     color: #ffffff;
     text-transform: uppercase;
     text-shadow: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: $screen-xs) {
+  .navbar-brand {
+    width: 80%;
   }
 }
 
