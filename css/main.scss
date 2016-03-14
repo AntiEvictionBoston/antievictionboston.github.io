@@ -28,6 +28,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
+// Breakpoints
+$screen-xs:        480px;
+
 
 /* Becky styles @TODO review */
 
@@ -90,7 +93,8 @@ h2 {
 /* Navigation */
 
 .navbar {
-  background-color: #000000; 
+  background-color: #000000;
+  background-image: none;
   border: 0;
   -webkit-border-radius: 0; // reset bootstrap
   -moz-border-radius: 0;
@@ -98,13 +102,20 @@ h2 {
 }
 
 .navbar-fixed-top {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.navbar-default .navbar-text {
+.navbar-inverse {
   color: #ffffff;
   a {
     color: #ffffff;
+  }
+  
+  .navbar-brand {
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: none;
   }
 }
 
