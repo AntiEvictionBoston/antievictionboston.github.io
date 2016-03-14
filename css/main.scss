@@ -3,22 +3,31 @@
 ---
 @charset "utf-8";
 
-/* path to glyphicons */
+/* Bootstrap */
+
+// path to glyphicons @TODO not sure if this is used
 $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/"; 
 
-/* custom variable */
+// import bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-// Our variables
+
+/* Our variables */
+
 $base-font-family: "Lato", "Helvetica", Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$font-weight-bold: 900;
+$font-weight-normal: 400;
+$font-weight-light: 300;
 
-$spacing-unit:     30px;
+$spacing-unit:     24px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #CC0000;
+$accent-color:     #F8E720;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -28,10 +37,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    800px;
 
 
-@media screen and (min-width: 600px) {
-  .jumbotron-hero-height { height: 550px;
-  } 
-}
+/* Becky styles @TODO review */
 
 .btn-btn-aemp {
   background-color: #cc0000; 
@@ -61,14 +67,72 @@ $content-width:    800px;
   padding-bottom: 30px;
 }
 
+
+/* Basic styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font-family;
+  font-weight: $font-weight-normal;
+  line-height: $base-line-height;
+}
+
+h1,
+h2 {
+  font-weight: $font-weight-bold;
+}
+
+
+/* Jumbotron */
+
+.home-jumbotron {
+  color: #fff;
+  h1 {
+    margin-top: $spacing-unit*4;
+    color: $accent-color;
+  }
+  
+}
+
+/* Navigation */
+
+.navbar {
+  background-color: #000000; 
+  border: 0;
+  -webkit-border-radius: 0; // reset bootstrap
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.navbar-fixed-top {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-default .navbar-text {
+  color: #ffffff;
+  a {
+    color: #ffffff;
+  }
+}
+
+
 /* Page */
- .page {
-    padding-top: $spacing-unit*3;
-    padding-bottom: $spacing-unit*2;
- }
 
+.page {
+  padding-top: $spacing-unit*3;
+  padding-bottom: $spacing-unit*2;
+}
 
-/* any style customization must be before the bootstrap import */
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@media screen and (min-width: $screen-xs) {
+  .home-jumbotron { 
+    height: 550px; // for browsers that don't understand vh
+    min-height: 60vh;
+  } 
+}
 
+/* Map */
 
+.layout-map {
+  padding-top: 50px;
+}
