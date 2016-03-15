@@ -170,6 +170,7 @@ h2 {
 
 /* Map */
 
-.layout-map {
-  padding-top: 50px;
+#east_boston_tenant_association_map {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
 }
