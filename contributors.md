@@ -3,8 +3,10 @@ layout: page
 title: Project Contributors
 permalink: /contributors/
 ---
+<!--
 Jessie Partridge, Research Analyst of the Metropolitan Area Planning Council: [mapc.org](http://www.mapc.org)
-
+-->
+<br>
 City Life/Vida Urbana: [clvu.org](http://www.clvu.org)
 
 Chinese Progressive Association: [cpaboston.org](http://www.cpaboston.org)
