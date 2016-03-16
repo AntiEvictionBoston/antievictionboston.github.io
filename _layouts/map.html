@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  {% include head.html %}
-
-  <body class="layout-map">
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div id="{{ page.map_id }}"></div>
-
-      <script src="https://cdn.rawgit.com/AntiEvictionBoston/utility/8f7dbd9ae189049938e2fcf37a525311f49388c9/maps.js"></script>
-
-    </div>
-
-    {% include footer-scripts.html %}
-
-  </body>
-
-</html>
+---
+layout: default
+---
+<div class="map-wrapper">
+{{ content }}
+</div>
