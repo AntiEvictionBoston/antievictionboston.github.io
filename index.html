@@ -21,7 +21,8 @@ layout: default
 
   <div class="container-fluid">
     <ul class="map-list container">
-      {% for map in site.maps %}
+      {% assign sorted_maps = site.maps | sort: "order" %}
+      {% for map in sorted_maps %}
         <li class="map-list-item panel">
         <div class="panel-body">
           <div class="map-thumbnail">
