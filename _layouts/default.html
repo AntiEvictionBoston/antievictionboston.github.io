@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="collection-{{ page.collection }}">
 
     {% include header.html %}
 
@@ -13,7 +13,9 @@
       </div>
     </div>
 
-    {% include footer.html %}
+    {% unless page.collection == "maps" %}
+      {% include footer.html %}
+    {% endunless %}
     
     {% include footer-scripts.html %}
     

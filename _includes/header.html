@@ -22,7 +22,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maps <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            {% for map in site.maps %}
+            {% assign sorted_maps = site.maps | sort: "order" %}
+            {% for map in sorted_maps %}
             <li><a href="{{ map.url | prepend: site.baseurl }}" title="View map">{{ map.title }}</a></li>
             {% endfor %}
           </ul>

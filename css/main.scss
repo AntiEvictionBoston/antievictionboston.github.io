@@ -170,7 +170,8 @@ h2 {
 
 /* Map */
 
-#east_boston_tenant_association_map {
+#east_boston_tenant_association_map,
+.map-wrapper {
   margin-top: 50px;
   height: calc(100vh - 50px) !important; // override any map-provided styles loaded later
 }
