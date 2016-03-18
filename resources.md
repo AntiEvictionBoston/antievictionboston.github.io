@@ -22,3 +22,20 @@ Support, and free legal assistance to people facing eviction in the Boston Area.
 Jamaica Plain, MA 02130  
 (617) 524-3541
 
+## [Harvard Legal Aid Bureau](http://www.harvardlegalaid.org)
+
+Providing free civil legal services to low-income individuals in the Greater Boston Area since 1914.
+
+23 Everett St.
+Cambridge, MA 02138
+(617) 495-4408 (Se habla Español)
+
+Please call during business hours of 9am to 5pm.
+
+## [Chinese Progressive Association](http://cpaboston.org)
+
+Drop-in services are available.
+
+28 Ash St. 
+Boston, MA 02111
+(617) 357-4499
