@@ -1,2 +1,2 @@
 # website
-Jekyll install for public-facing Anti-Eviction Boston website.
+Jekyll install for public-facing Boston Displacement Mapping Project website.
