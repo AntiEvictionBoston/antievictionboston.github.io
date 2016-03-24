@@ -15,6 +15,7 @@ $font-weight-normal: 400;
 $font-weight-light: 300;
 
 $spacing-unit:     24px;
+$timing-unit:      400ms;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -35,9 +36,11 @@ $screen-xs:        480px;
 /* Becky styles @TODO review */
 
 .btn-btn-aemp {
-  background-color: #cc0000; 
+  background-color: $brand-color; 
   color: #ffffff; 
-  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: $base-font-size;
+  transition: all ease $timing-unit;
 }
 
 .img-aemp {
@@ -48,12 +51,13 @@ $screen-xs:        480px;
 .btn:focus,
 .btn:active,
 .btn.active {
-  background-color: #cc0000;
+  background-color: $brand-color;
   color: #ffffff;
 }
 
-.btn:hover {
-  background-color: #db4c4c;
+.btn:hover,
+.btn-btn-aemp:hover {
+  background-color: darken($brand-color, 10%);
   color: #ffffff;
 }
 
@@ -75,10 +79,25 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: $font-weight-bold;
 }
 
+h1 {
+  color: $brand-color;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote,
+ul,
+ol,
+form {
+  margin-bottom: $spacing-unit;
+}
 
 /* Jumbotron */
 
@@ -88,7 +107,10 @@ h2 {
     margin-top: $spacing-unit*4;
     color: $accent-color;
   }
-  
+  @media screen and (min-width: $screen-xs) {
+    height: 550px; // for browsers that don't understand vh
+    min-height: 60vh;
+  }
 }
 
 /* Navigation */
@@ -111,7 +133,6 @@ h2 {
   a {
     color: #ffffff;
   }
-
   .navbar-brand {
     font-size: 1em;
     color: #ffffff;
@@ -120,15 +141,11 @@ h2 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    @media screen and (max-width: $screen-xs) {
+      width: 80%;
+    }
   }
 }
-
-@media screen and (max-width: $screen-xs) {
-  .navbar-brand {
-    width: 80%;
-  }
-}
-
 
 /* Page */
 
@@ -137,11 +154,12 @@ h2 {
   padding-bottom: $spacing-unit*2;
 }
 
-@media screen and (min-width: $screen-xs) {
-  .home-jumbotron { 
-    height: 550px; // for browsers that don't understand vh
-    min-height: 60vh;
-  } 
+.post-title {
+  color: $brand-color;
+}
+
+.post-content h2 {
+  font-weight: 300;
 }
 
 /* Map list */
@@ -165,8 +183,23 @@ h2 {
   li:hover .map-thumbnail a {
     background-size: 110%;
   }
+  .map-title {
+    margin-bottom: $spacing-unit/2;
+  }
+  .map-description {
+    margin-bottom: 0;
+  }
 }
 
+
+/* Signup form */
+
+#mc_embed_signup .button {
+  @extend .btn-btn-aemp; // make it the same as the other buttons
+  border: 0;
+  padding: $spacing-unit/4 $spacing-unit/2 ;
+  border-radius: $spacing-unit/6;
+}
 
 /* Map */
 
