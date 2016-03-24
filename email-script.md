@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Email Your Representative
+title: Email Your City Councillor
 permalink: /email-script/
 ---
 <br />
